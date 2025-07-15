@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff4757;
+}
+
+.subtitle {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.jinx-story {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 20px;
+}
+
+.jinx-story img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff4757;
+}
+
+.jinx-story div {
+  max-width: 400px;
+  text-align: left;
+}
+
+.jinx-story h2 {
+  margin: 0 0 10px 0;
+  color: #ff6b81;
+}
