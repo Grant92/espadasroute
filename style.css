@@ -51,3 +51,64 @@ h1 {
   margin: 0 0 10px 0;
   color: #ff6b81;
 }
+
+/* menu */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: .5rem;
+  font-size: 2.2rem;
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 900;
+  line-height: 1.5;
+  padding-inline: .2em;
+  display: block;
+}
+/* 1 */
+ul li {
+  background: 
+    conic-gradient(lightblue 0 0)
+    bottom/100% 0% no-repeat;
+  transition: .2s;
+}
+
+/* 2 */
+ul li:is(:hover,.active) {
+  background-size: 100% 100%;
+  transition: .2s .2s;
+}
+
+/* 3 */
+ul:has(li:hover) li.active:not(:hover) {
+  background-size: 100% 0%;
+  transition: .2s;
+}
+
+ul:before {
+  content:"";
+  position: absolute;
+  position-anchor: --li;
+  background: red;
+  transition: .2s;
+}
+
+ul li:is(:hover, .active) {
+  anchor-name: --li;
+}
+
+ul:has(li:hover) li.active:not(:hover) {
+  anchor-name: none;
+}
+
+ul:before {
+  bottom: anchor(bottom);
+  left: anchor(left);
+  right: anchor(right);
+  height: .2em;  
+}
