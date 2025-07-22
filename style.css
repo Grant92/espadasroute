@@ -156,14 +156,15 @@ ul:before {
     padding: 1rem;
   }
 
-  .NavMenu {
+  /* Tohle upraví i "ul", pokud nepoužíváš třídu NavMenu */
+  ul, .NavMenu {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
     padding: 0;
   }
 
-  .NavMenu li a {
+  ul li a, .NavMenu li a {
     font-size: 1rem;
     display: block;
     padding: 0.5em;
