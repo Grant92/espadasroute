@@ -45,6 +45,7 @@ h1 {
 .jinx-story {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 3rem;
   gap: 20px;
 }
